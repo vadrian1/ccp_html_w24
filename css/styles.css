@@ -1,9 +1,61 @@
-*{
-    font-family: Helvetica, Arial, sans-serif;
+*, h1, a{
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+header{
+    position: sticky;
+    top:0;
+    z-index: 998;
+}
+
+main > div{
+    border-bottom: #e0e0eb solid 1px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 main{
-    margin: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+figure{
+    margin:auto;
+    text-align: center;
+    background-color: #dddddd;
+    padding: 2%;
+    width:50%;
+}
+
+h1{
+    font-size:xx-large;
+    padding: 10px;
+    text-align: center;
+    background-color: #00190a;
+    color: white;
+}
+
+h2{
+    margin: 10px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h3{
+    margin: 5px;
+    font-weight: bold;
+}
+
+p, h2, h3, li{
+    line-height: 200%;
+}
+
+div ul{
+    list-style-type: circle;
+}
+
+div ol{
+    list-style-type:decimal;
 }
 
 ul.nav-bar{
@@ -12,10 +64,22 @@ ul.nav-bar{
 }
 .nav-bar li{
     padding: 5%;
-    border: #2B7A78 solid 3px;
-    background-color: #3aafa9;
+    border: #028a0f solid 3px;
+    background-color: #028a0f;
     text-align: center;
     font-size:large;
+}
+/* #03c04a #1dfc72; #028a0f */
+li.active{
+    /* border: #1dfc72 solid 3px; */
+    background-color: #03c04a;
+}
+li.active a{
+    color:black;
+}
+
+li a{
+    color:white;
 }
 
 .baconPhotos{
@@ -24,14 +88,64 @@ ul.nav-bar{
 }
 
 img{
+    object-fit: cover;
     max-height:400px;
+    max-width: 100%;
 }
 
 video{
     max-height:400px;
+    max-width: 100%;
 }
 
 .piper-photos{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+a.skipbutton{
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+
+a.skipbutton:focus, a.skipbutton:active{
+    background-color: white;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:5px;
+    border-radius: 15px;
+    text-align:center;
+    font-size:1.2em;
+    z-index:999;
+}
+
+.homemain{
+    margin: 0%;
+    background-color: white;
+}
+.homediv{
+    background-color: #00190a;
+    color: white;
+    padding: 10%;
+}
+
+div.homediv p{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.otherdiv{
+    margin-left: 10%;
+    margin-right: 10%;
 }
