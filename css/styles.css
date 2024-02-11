@@ -10,7 +10,7 @@ header{
 
 main > div{
     border-bottom: #e0e0eb solid 1px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     padding-top: 10px;
 }
 
@@ -84,12 +84,13 @@ li.active{
     /* border: #1dfc72 solid 3px; */
     background-color: #03c04a;
 }
-li.active a{
-    color:black;
+
+.nav-bar a{
+    color:white;
 }
 
-li a{
-    color:white;
+li.active a{
+    color:black;
 }
 
 .travelgallery{
@@ -199,6 +200,26 @@ div.homediv p{
     object-fit: contain;
 }
 
+.petlinks{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.petnav{
+    padding: 10px;
+    background-color: #00190a;
+}
+.petlinks li{
+    text-align: center;
+    padding: auto 10px auto 10px;
+    background-color: #03c04a;
+    text-align: center;
+    font-size:large;
+    border-radius: 10px;
+}
+.petlinks a{
+    color: black;
+}
 
 @media (prefers-reduced-motion) {
     img{
