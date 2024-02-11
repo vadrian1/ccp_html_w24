@@ -217,6 +217,16 @@ div.homediv p{
     font-size:large;
     border-radius: 10px;
 }
+#funlink{
+    text-align: center;
+    padding: 10px;
+    background-color: #03c04a;
+    text-align: center;
+    font-size:large;
+    border-radius: 20px;
+    color:black;
+}
+
 .petlinks a{
     color: black;
 }
