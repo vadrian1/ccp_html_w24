@@ -61,6 +61,12 @@ div ul, div ol{
     padding-left: 30px;
 }
 
+img{
+    object-fit: cover;
+    max-height:400px;
+    max-width: 100%;
+}
+
 ul.nav-bar{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -111,17 +117,6 @@ li a{
     object-fit: cover;
 }
 
-.baconPhotos{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-img{
-    object-fit: cover;
-    max-height:400px;
-    max-width: 100%;
-}
-
 video{
     max-height:400px;
     max-width: 100%;
@@ -135,6 +130,11 @@ video{
     height:100%;
     width: 100%;
     object-fit: cover;
+}
+.piper-photos video{
+    height:100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 a.skipbutton{
@@ -183,3 +183,25 @@ div.homediv p{
     margin-left: 10%;
     margin-right: 10%;
 }
+
+.petgallery{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.petgallery img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+}
+.petgallery video{
+    height:100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+@media (prefers-reduced-motion) {
+    img{
+        animation: none;
+    }
+  }
