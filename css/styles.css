@@ -2,21 +2,35 @@
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
+body{
+    background-color: #FAF9F6;
+}
+
 header{
-    position: sticky;
     top:0;
     z-index: 998;
 }
 
 main > div{
-    border-bottom: #e0e0eb solid 1px;
-    padding-bottom: 20px;
-    padding-top: 10px;
+    border: #e0e0eb solid 1px;
+    /* border-right: #e0e0eb solid 1px; */
+    padding: 2%;
+    margin: 10px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    background: white;
+    border-radius: 20px;
+
 }
 
-main{
-    margin-left: 10%;
-    margin-right: 10%;
+.petGrid > div{
+    border-bottom: #e0e0eb solid 1px;
+    border-right: #e0e0eb solid 1px;
+    padding: 1% 1% 20px 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: white;
+    border-radius: 20px;
 }
 
 figure{
@@ -24,14 +38,15 @@ figure{
     text-align: center;
     background-color: #dddddd;
     padding: 2%;
-    width:50%;
+    width:75%;
 }
 
-h1{
+h1{ 
     font-size:xx-large;
     padding: 10px;
     text-align: center;
     background-color: #00190a;
+    /* background-color: #5c4033; */
     color: white;
 }
 
@@ -69,7 +84,7 @@ img{
 
 ul.nav-bar{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     padding: 0px;
 }
 .nav-bar li{
@@ -165,12 +180,14 @@ a.skipbutton:focus, a.skipbutton:active{
 
 .homemain{
     margin: 0%;
-    background-color: white;
 }
 .homediv{
     background-color: #00190a;
     color: white;
     padding: 10%;
+    margin: 0px;
+    border: none;
+    border-radius: 0px;
 }
 
 div.homediv p{
@@ -204,10 +221,15 @@ div.homediv p{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
+    list-style-type: none;
+    padding: 0px;
 }
 .petnav{
     padding: 10px;
     background-color: #00190a;
+}
+.travellinks{
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .petlinks li{
     text-align: center;
@@ -236,3 +258,51 @@ div.homediv p{
         animation: none;
     }
   }
+
+@media screen and (min-width: 800px) {
+    ul.nav-bar{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .petGrid main > div{
+        margin-left: 0px;
+    }
+    .petGrid > main{
+        overflow-y: scroll;
+    }
+    main > div{
+        margin: 10px 15% 10px;
+    }
+
+    .petGrid{
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+        height: 80vh;
+    }
+    
+    .petnav{
+        border: #e0e0eb solid 1px;
+        background-color: white;
+        margin: 3%;
+        height: fit-content;
+        border-radius: 20px;
+    }
+
+    .petlinks{
+        display: block;
+        padding-left:0px;
+
+    }
+    .petnav li{
+        margin-bottom: 10px;
+    }
+
+    .petlinks li{
+        background-color: #00190a;
+    }
+    .petlinks a{
+        color: white;
+    }
+    header{
+        position: sticky;
+    }
+}
