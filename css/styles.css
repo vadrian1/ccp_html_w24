@@ -11,6 +11,15 @@ header{
     z-index: 998;
 }
 
+.hidden{
+    display:none;
+}
+
+#hamDiv{
+    border: #028a0f solid 3px;
+    background-color: #028a0f;
+}
+
 main > div{
     border: #e0e0eb solid 1px;
     /* border-right: #e0e0eb solid 1px; */
@@ -84,7 +93,7 @@ img{
 
 ul.nav-bar{
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     padding: 0px;
 }
 .nav-bar li{
@@ -119,7 +128,7 @@ li.active a{
     transition:transform 0.25s ease;
 }
 .travelgallery img:hover{
-    -webkit-transform:scale(1.5); /* or some other value */
+    -webkit-transform:scale(1.5);
     transform:scale(1.5);
 }
 
@@ -261,8 +270,12 @@ div.homediv p{
 
 @media screen and (min-width: 800px) {
     ul.nav-bar{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        display:grid;
+        padding: 0px;
     }
+    /* ul.nav-bar{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    } */
     .petGrid main > div{
         margin-left: 0px;
     }
@@ -304,5 +317,41 @@ div.homediv p{
     }
     header{
         position: sticky;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    ul.nav-bar{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #hamDiv{
+        display: none;
+        visibility: hidden;
+    }
+    .hamButton{
+        display: none;
+    }
+    h2{
+        text-align: center;
+    }
+    .petnav{
+        display: none;
+    }
+    .petGrid{
+        display: block;
+    }
+    main > div{
+        margin:unset;
+        margin-bottom: 10px;
+    }
+    .petGrid > main{
+        overflow-y: unset;
+        margin: 10px 5% 10px 5%;
+        display: grid;
+    }
+    .sidebyside{
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 10px;
     }
 }

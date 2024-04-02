@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/recipe.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes</title>
@@ -11,7 +12,10 @@
 
     <a href = "#main" class="skipbutton">Skip to Main Content</a>
     <header>
-        <nav>
+        <div id="hamDiv">
+            <button id = "hamButton" onclick="menu()">&#9776;</button>
+        </div>
+        <nav id="menu">
             <ul class="nav-bar">
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "pets.html">Pets</a></li>
@@ -125,6 +129,6 @@
 </div>
 
 </main>
-    
+    <script src="js/js.js"></script>
 </body>
 </html>
