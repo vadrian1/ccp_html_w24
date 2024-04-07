@@ -11,13 +11,29 @@ header{
     z-index: 998;
 }
 
-.hidden{
-    display:none;
+button{
+    background-color: #03c04a;
+    color:black;
+    border:none;
+    border-radius: 20px;
+    height: 40px;
+    margin: 5px;
+}
+button::active{
+    background-color: #2AD789;
 }
 
 #hamDiv{
-    border: #028a0f solid 3px;
-    background-color: #028a0f;
+    position:sticky;
+    /* border: #028a0f solid 3px; */
+    background-color: #03c04a;
+    text-align: right;
+}
+#hamButton{
+    background-color: #03c04a;
+    border:none;
+    height: 40px;
+    width: 40px ;
 }
 
 main > div{
@@ -143,8 +159,9 @@ li.active a{
 }
 
 video{
-    max-height:400px;
+    max-height: 100%;
     max-width: 100%;
+    object-fit: cover;
 }
 
 .piper-photos{
@@ -227,8 +244,7 @@ div.homediv p{
 }
 
 .petlinks{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
     grid-gap: 10px;
     list-style-type: none;
     padding: 0px;
@@ -237,10 +253,8 @@ div.homediv p{
     padding: 10px;
     background-color: #00190a;
 }
-.travellinks{
-    grid-template-columns: 1fr 1fr 1fr;
-}
 .petlinks li{
+    flex: 1;
     text-align: center;
     padding: auto 10px auto 10px;
     background-color: #03c04a;
@@ -272,6 +286,7 @@ div.homediv p{
     ul.nav-bar{
         display:grid;
         padding: 0px;
+        grid-template-columns: 1fr 1fr;
     }
     /* ul.nav-bar{
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -301,7 +316,8 @@ div.homediv p{
     }
 
     .petlinks{
-        display: block;
+        /* display: block; */
+        flex-direction: column;
         padding-left:0px;
 
     }
@@ -348,6 +364,7 @@ div.homediv p{
         overflow-y: unset;
         margin: 10px 5% 10px 5%;
         display: grid;
+        
     }
     .sidebyside{
         display: grid;
@@ -355,3 +372,8 @@ div.homediv p{
         column-gap: 10px;
     }
 }
+
+.hidden{
+    display:none;
+}
+/* at the bottom to override any class */
