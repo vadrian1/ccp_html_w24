@@ -19,7 +19,7 @@
             <ul class="nav-bar">
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "pets.html">Pets</a></li>
-                <li class="active"><a href =  "recipes.html" >Recipes</a></li>
+                <li class="active"><a href =  "recipes.html" >Recipes*</a></li>
                 <li><a href = "travel.html" >Travel</a></li>
             </ul>
         </nav>
@@ -27,7 +27,7 @@
     </header>
 
 <div class="petGrid">
-    <nav class="petnav">
+    <nav class="petnav" aria-label="recipenav">
         <ul class="petlinks">
             <li><a href="#guac">Guacamole</a></li>
             <li><a href="#jiaozi">Jiaozi</a></li>
@@ -36,7 +36,7 @@
     </nav>
 <main id = "main">
     <div id="guac">
-        <h2>Guacamole</h2>
+        <h2 tabindex="0">Guacamole</h2>
         <img src="images/guac.JPG" height="400" alt="Bowl of Guacamole on a cutting board">
         <p><b>Origin:</b> Mexican <br>
             <b>Source:</b> Own recipe <br>
@@ -61,8 +61,9 @@
             <li>Use a fork to gently mash them</li>
             <li>Add the onions, tomatoes, cilantro, jalapeno pepper, garlic, lime juice and salt and stir everything together.</li>
         </ol>
+        <div>
         <img src="images/guacamole_2.jpg" height="400" alt="Bowl of guacamole surrounded by ingredients">
-        <img src="images/avocado_chips.jpg" height="400" alt="A bowl of tortilla chips next to a bowl of guacamole">
+        <img src="images/avocado_chips.jpg" height="400" alt="A bowl of tortilla chips next to a bowl of guacamole"></div>
     </div>
     <div id="jiaozi">
         <h2>Chinese Jiaozi</h2>
@@ -87,9 +88,11 @@
             <li>Cooking</li>
             <li>Dipping sauces</li>
         </ol>
+        <div>
         <img src="images/morejiaozi.JPG" height="400" alt="Three dishes of jiaozi">
         <img src="images/steamedjiaozi.JPG" height="400" alt="Steamed Jiaozi">
         <img src="images/makingjiaozi.JPG" height="400" alt="Making jiaozi">
+    </div>
     </div>
     <div id="curry">
         <h2>Japanese Chicken Curry</h2>
@@ -124,7 +127,9 @@
             <li>Meanwhile, bring remaining water and rice to a boil in a saucepan. Reduce heat to medium-low, cover, and simmer until rice is tender and water has been absorbed, 20 to 25 minutes.</li>
             <li>Scoop rice into bowls and serve curry on top.</li>
         </ol>
+        <div>
         <img src="images/curry_sauce.JPG" height="400" alt="Pack of japanese curry mix">
+    </div>
     </div>
 </div>
 
